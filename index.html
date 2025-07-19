@@ -44,7 +44,9 @@
           data-bs-theme="light"
         >
           <div class="container-fluid">
-            <a class="logo fs-3" href="#"><i class="fa-solid fa-film " style="color: cornflowerblue;"></i></a>
+            <a class="logo fs-3" href="#"
+              ><i class="fa-solid fa-film" style="color: cornflowerblue"></i
+            ></a>
             <a class="navbar-brand text-white ms-2" href="#">Cinescope</a>
             <button
               class="navbar-toggler"
@@ -57,14 +59,14 @@
             >
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarScroll">
+            <div class="collapse navbar-collapse" id="navbarScroll ">
               <ul
-                class="navbar-nav ms-5 me-auto my-2 my-lg-0 navbar-nav-scroll "
+                class="navbar-nav my-auto my-lg-0 navbar-nav-scroll mx-auto d-flex justify-content-center gap-4"
                 style="--bs-scroll-height: 100px"
               >
                 <li class="nav-item dropdown">
                   <a
-                    class="nav-link dropdown text-white tabs fs-5 me-4"
+                    class="nav-link dropdown text-white tabs fs-6"
                     href="#"
                     role="button"
                     data-bs-toggle="dropdown"
@@ -113,7 +115,7 @@
                 </li>
                 <li class="nav-item dropdown">
                   <a
-                    class="nav-link dropdown text-white fs-5 me-4"
+                    class="nav-link dropdown text-white fs-6"
                     href="#"
                     role="button"
                     data-bs-toggle="dropdown"
@@ -135,7 +137,7 @@
                 </li>
                 <li class="nav-item dropdown">
                   <a
-                    class="nav-link dropdown text-white fs-5 me-4"
+                    class="nav-link dropdown text-white fs-6"
                     href="#"
                     role="button"
                     data-bs-toggle="dropdown"
@@ -155,24 +157,48 @@
                     </li>
                   </ul>
                 </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown text-white fs-6"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Discover
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#">Top 250 Movies</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Popular This Week</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Top Box Office</a>
+                    </li>
+                  </ul>
+                </li>
+                <form
+                  class="ms-4 d-flex position-relative align-items-center"
+                  role="search"
+                >
+                  <input
+                    class="form-control me-2 searchBox"
+                    type="search"
+                    aria-label="Search"
+                  />
+                  <a class="position-absolute text-white-50 end-50" href="#"
+                    ><i class="fa-solid fa-magnifying-glass searchButton"></i
+                  ></a>
+                </form>
               </ul>
-              <form class="d-flex" role="search">
-                <input
-                  class="form-control me-2"
-                  type="search"
-                  placeholder="Search"
-                  aria-label="Search"
-                />
-                <button class="btn btn-outline-success" type="submit">
-                  Search
-                </button>
-              </form>
             </div>
           </div>
         </nav>
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="2000">
-            <img src="./images/f1-movie.jpg" class="d-block w-100" alt="..." />
+            <img src="./images/f1-movie.png" class="d-block w-100" alt="f1" />
             <div class="carousel-caption d-none d-md-block">
               <h5>First slide label</h5>
               <p>
@@ -181,16 +207,19 @@
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="2000">
-            <img src="./images/superman.jpg" class="d-block w-100" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>
-                Some representative placeholder content for the second slide.
-              </p>
+            <img src="./images/balarina.jpg" class="d-block w-100" alt="bellarina" />
+            <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
+              <h1>Discover. Track. Share.</h1>
+          <p>
+            Discover what's hot and where to stream it. Track shows and
+          </p>
+          <p> movies
+            you watch. Share comments, recommendations, and ratings.</p>
+            <button type="button" class="my-auto mx-auto w-25 btn btn-success ">Join Cinescope</button>
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="2000">
-            <img src="./images/f1-movie.jpg" class="d-block w-100" alt="..." />
+            <img src="./images/MI-8.jpg" class="d-block w-100" alt="mi8" />
             <div class="carousel-caption d-none d-md-block">
               <h5>Third slide label</h5>
               <p>
@@ -218,8 +247,26 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+      <br />
+      <br />
+      <div class="row p-3">
+        <div class="col"></div>
+        <div class="col-6 my-6 row text-center">
+          <h4>Discover. Track. Share.</h4>
+          <p>
+            Discover what's hot and where to stream it. Track shows and
+          </p>
+          <p> movies
+            you watch. Share comments, recommendations, and ratings.</p>
+            <button type="button" class="my-auto mx-auto w-25 btn btn-success ">Join Cinescope</button>
+          <!-- <button class="my-auto mx-auto w-25 joinButton">Join Cinescope</button> -->
+        </div>
+        <div class="col"></div>
+      </div>
       <!-- images -->
-      <div class="container-fluid d-flex flex-wrap justify-content-center mt-5 w-25">
+      <div
+        class="container-fluid d-flex flex-wrap justify-content-center mt-5 w-25"
+      >
         <img class="img-fluid tabimages" src="./images/oscar.png" alt="oscar" />
         <img class="img-fluid tabimages" src="./images/emmy.png" alt="emmy" />
         <img
@@ -231,319 +278,395 @@
       </div>
 
       <!-- Top Movies -->
-      <div>
-         <div id="topMovies">
-           <h3 class="sectionHead" >Top Movies</h3>
+      <div id="topMovies" class="container">
+        <div>
+          <h3 class="sectionHead">Top Movies</h3>
           <span class="subHead">Here's what movies are trending now.</span>
-         </div>
-        <div class="mt-3 col-12 d-flex justify-content-center align-items-center">
-          <div class="d-inline-flex position-relative me-3 movie-container">
-            <img
-              class="image-fluid rounded-1 w-100"
-              src="./images/Argo .jfif"
-              alt="argo"
-            />
-            <div class="text-center position-absolute p-4 movie-stats">
-              <a class="fs-1" href="#"
-                ><i class="fa-solid fa-eye" style="color: cornflowerblue"></i
-              ></a>
-              <span class="text-white fs-5">376.5K</span>
-              <a class="fs-1" href="#"
-                ><i class="fa-solid fa-heart" style="color: indianred"></i
-              ></a>
-              <span class="text-white fs-5">190.5K</span>
+        </div>
+
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-4 mt-3">
+          <!-- Movie Card -->
+          <div class="col">
+            <div class="position-relative movie-container">
+              <img
+                class="img-fluid rounded-1 w-100"
+                src="./images/Argo .jfif"
+                alt="argo"
+              />
+              <div class="text-center position-absolute p-4 movie-stats">
+                <a class="fs-1" href="#"
+                  ><i class="fa-solid fa-eye" style="color: cornflowerblue"></i
+                ></a>
+                <span class="text-white fs-5">376.5K</span>
+                <a class="fs-1" href="#"
+                  ><i class="fa-solid fa-heart" style="color: indianred"></i
+                ></a>
+                <span class="text-white fs-5">190.5K</span>
+              </div>
             </div>
           </div>
-          <div class="d-inline-flex position-relative me-3 movie-container">
-            <img
-              class="image-fluid rounded-1 w-100"
-              src="./images/Her.jfif"
-              alt="her"
-            />
-            <div class="text-center position-absolute p-4 movie-stats">
-              <a class="fs-1" href="#"
-                ><i class="fa-solid fa-eye" style="color: cornflowerblue"></i
-              ></a>
-              <span class="text-white fs-5">376.5K</span>
-              <a class="fs-1" href="#"
-                ><i class="fa-solid fa-heart" style="color: indianred"></i
-              ></a>
-              <span class="text-white fs-5">190.5K</span>
+
+          <div class="col">
+            <div class="position-relative movie-container">
+              <img
+                class="img-fluid rounded-1 w-100"
+                src="./images/Her.jfif"
+                alt="her"
+              />
+              <div class="text-center position-absolute p-4 movie-stats">
+                <a class="fs-1" href="#"
+                  ><i class="fa-solid fa-eye" style="color: cornflowerblue"></i
+                ></a>
+                <span class="text-white fs-5">376.5K</span>
+                <a class="fs-1" href="#"
+                  ><i class="fa-solid fa-heart" style="color: indianred"></i
+                ></a>
+                <span class="text-white fs-5">190.5K</span>
+              </div>
             </div>
           </div>
-          <div class="d-inline-flex position-relative me-3 movie-container">
-            <img
-              class="image-fluid rounded-1 w-100"
-              src="./images/Fight Club Poster.jfif"
-              alt="fclub"
-            />
-            <div class="text-center position-absolute p-4 movie-stats">
-              <a class="fs-1" href="#"
-                ><i class="fa-solid fa-eye" style="color: cornflowerblue"></i
-              ></a>
-              <span class="text-white fs-5">376.5K</span>
-              <a class="fs-1" href="#"
-                ><i class="fa-solid fa-heart" style="color: indianred"></i
-              ></a>
-              <span class="text-white fs-5">190.5K</span>
+
+          <div class="col">
+            <div class="position-relative movie-container">
+              <img
+                class="img-fluid rounded-1 w-100"
+                src="./images/Fight Club Poster.jfif"
+                alt="fclub"
+              />
+              <div class="text-center position-absolute p-4 movie-stats">
+                <a class="fs-1" href="#"
+                  ><i class="fa-solid fa-eye" style="color: cornflowerblue"></i
+                ></a>
+                <span class="text-white fs-5">376.5K</span>
+                <a class="fs-1" href="#"
+                  ><i class="fa-solid fa-heart" style="color: indianred"></i
+                ></a>
+                <span class="text-white fs-5">190.5K</span>
+              </div>
             </div>
           </div>
-          <div class="d-inline-flex position-relative me-3 movie-container">
-            <img
-              class="image-fluid rounded-1 w-100"
-              src="./images/the-brutalist.jpg"
-              alt="brutalist"
-            />
-            <div  class="text-center position-absolute p-4 movie-stats">
-              <a class="fs-1" href="#"
-                ><i class="fa-solid fa-eye" style="color: cornflowerblue"></i
-              ></a>
-              <span class="text-white fs-5">376.5K</span>
-              <a class="fs-1" href="#"
-                ><i class="fa-solid fa-heart" style="color: indianred"></i
-              ></a>
-              <span class="text-white fs-5">190.5K</span>
+
+          <div class="col">
+            <div class="position-relative movie-container">
+              <img
+                class="img-fluid rounded-1 w-100"
+                src="./images/the-brutalist.jpg"
+                alt="brutalist"
+              />
+              <div class="text-center position-absolute p-4 movie-stats">
+                <a class="fs-1" href="#"
+                  ><i class="fa-solid fa-eye" style="color: cornflowerblue"></i
+                ></a>
+                <span class="text-white fs-5">376.5K</span>
+                <a class="fs-1" href="#"
+                  ><i class="fa-solid fa-heart" style="color: indianred"></i
+                ></a>
+                <span class="text-white fs-5">190.5K</span>
+              </div>
             </div>
           </div>
-          <div class="d-inline-flex position-relative movie-container">
-            <img
-              class="image-fluid rounded-1 w-100"
-              src="./images/the-terminal.jpg"
-              alt="terminal"
-            />
-            <div class="text-center position-absolute p-4 movie-stats">
-              <a class="fs-1" href="#"
-                ><i class="fa-solid fa-eye" style="color:cornflowerblue"></i
-              ></a>
-              <span class="text-white fs-5">376.5K</span>
-              <a class="fs-1" href="#"
-                ><i class="fa-solid fa-heart" style="color: indianred"></i
-              ></a>
-              <span class="text-white fs-5">190.5K</span>
+
+          <div class="col">
+            <div class="position-relative movie-container">
+              <img
+                class="img-fluid rounded-1 w-100"
+                src="./images/the-terminal.jpg"
+                alt="terminal"
+              />
+              <div class="text-center position-absolute p-4 movie-stats">
+                <a class="fs-1" href="#"
+                  ><i class="fa-solid fa-eye" style="color: cornflowerblue"></i
+                ></a>
+                <span class="text-white fs-5">376.5K</span>
+                <a class="fs-1" href="#"
+                  ><i class="fa-solid fa-heart" style="color: indianred"></i
+                ></a>
+                <span class="text-white fs-5">190.5K</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
-     <!-- Top TV Shows -->
-      <div class="mt-5">
-         <div id="topShows">
-           <h3 class="sectionHead" >Top TV Shows</h3>
+
+      <!-- Top TV Shows -->
+      <div id="topShows" class="container">
+        <div>
+          <h3 class="sectionHead">Top TV Shows</h3>
           <span class="subHead">Here's what shows are trending now.</span>
-         </div>
-        <div class="mt-3 col-12 d-flex justify-content-center align-items-center">
-          <div class="d-inline-flex position-relative me-3 movie-container">
-            <img
-              class="image-fluid rounded-1 w-100"
-              src="./images/foundationjpg.webp"
-              alt="foundation"
-            />
-            <div class="text-center position-absolute p-4 movie-stats">
-              <a class="fs-1" href="#"
-                ><i class="fa-solid fa-eye" style="color: cornflowerblue"></i
-              ></a>
-              <span class="text-white fs-5">376.5K</span>
-              <a class="fs-1" href="#"
-                ><i class="fa-solid fa-heart" style="color: indianred"></i
-              ></a>
-              <span class="text-white fs-5">190.5K</span>
+        </div>
+
+        <div class="mt-3 row row-cols-2 row-cols-md-3 row-cols-lg-5 g-4">
+          <div class="col">
+            <div class="position-relative movie-container">
+              <img
+                class="img-fluid rounded-1 w-100"
+                src="./images/foundationjpg.webp"
+                alt="foundation"
+              />
+              <div class="text-center position-absolute p-4 movie-stats">
+                <a class="fs-1" href="#"
+                  ><i class="fa-solid fa-eye" style="color: cornflowerblue"></i
+                ></a>
+                <span class="text-white fs-5">376.5K</span>
+                <a class="fs-1" href="#"
+                  ><i class="fa-solid fa-heart" style="color: indianred"></i
+                ></a>
+                <span class="text-white fs-5">190.5K</span>
+              </div>
             </div>
           </div>
-          <div class="d-inline-flex position-relative me-3 movie-container">
-            <img
-              class="image-fluid rounded-1 w-100"
-              src="./images/breaking-bad.webp"
-              alt="brba"
-            />
-            <div class="text-center position-absolute p-4 movie-stats">
-              <a class="fs-1" href="#"
-                ><i class="fa-solid fa-eye" style="color: cornflowerblue"></i
-              ></a>
-              <span class="text-white fs-5">376.5K</span>
-              <a class="fs-1" href="#"
-                ><i class="fa-solid fa-heart" style="color: indianred"></i
-              ></a>
-              <span class="text-white fs-5">190.5K</span>
+
+          <div class="col">
+            <div class="position-relative movie-container">
+              <img
+                class="img-fluid rounded-1 w-100"
+                src="./images/breaking-bad.webp"
+                alt="brba"
+              />
+              <div class="text-center position-absolute p-4 movie-stats">
+                <a class="fs-1" href="#"
+                  ><i class="fa-solid fa-eye" style="color: cornflowerblue"></i
+                ></a>
+                <span class="text-white fs-5">376.5K</span>
+                <a class="fs-1" href="#"
+                  ><i class="fa-solid fa-heart" style="color: indianred"></i
+                ></a>
+                <span class="text-white fs-5">190.5K</span>
+              </div>
             </div>
           </div>
-          <div class="d-inline-flex position-relative me-3 movie-container">
-            <img
-              class="image-fluid rounded-1 w-100"
-              src="./images/got.webp"
-              alt="got"
-            />
-            <div class="text-center position-absolute p-4 movie-stats">
-              <a class="fs-1" href="#"
-                ><i class="fa-solid fa-eye" style="color: cornflowerblue"></i
-              ></a>
-              <span class="text-white fs-5">376.5K</span>
-              <a class="fs-1" href="#"
-                ><i class="fa-solid fa-heart" style="color: indianred"></i
-              ></a>
-              <span class="text-white fs-5">190.5K</span>
+
+          <div class="col">
+            <div class="position-relative movie-container">
+              <img
+                class="img-fluid rounded-1 w-100"
+                src="./images/got.webp"
+                alt="got"
+              />
+              <div class="text-center position-absolute p-4 movie-stats">
+                <a class="fs-1" href="#"
+                  ><i class="fa-solid fa-eye" style="color: cornflowerblue"></i
+                ></a>
+                <span class="text-white fs-5">376.5K</span>
+                <a class="fs-1" href="#"
+                  ><i class="fa-solid fa-heart" style="color: indianred"></i
+                ></a>
+                <span class="text-white fs-5">190.5K</span>
+              </div>
             </div>
           </div>
-          <div class="d-inline-flex position-relative me-3 movie-container">
-            <img
-              class="image-fluid rounded-1 w-100"
-              src="./images/dexter.webp"
-              alt="dexter"
-            />
-            <div  class="text-center position-absolute p-4 movie-stats">
-              <a class="fs-1" href="#"
-                ><i class="fa-solid fa-eye" style="color: cornflowerblue"></i
-              ></a>
-              <span class="text-white fs-5">376.5K</span>
-              <a class="fs-1" href="#"
-                ><i class="fa-solid fa-heart" style="color: indianred"></i
-              ></a>
-              <span class="text-white fs-5">190.5K</span>
+
+          <div class="col">
+            <div class="position-relative movie-container">
+              <img
+                class="img-fluid rounded-1 w-100"
+                src="./images/dexter.webp"
+                alt="dexter"
+              />
+              <div class="text-center position-absolute p-4 movie-stats">
+                <a class="fs-1" href="#"
+                  ><i class="fa-solid fa-eye" style="color: cornflowerblue"></i
+                ></a>
+                <span class="text-white fs-5">376.5K</span>
+                <a class="fs-1" href="#"
+                  ><i class="fa-solid fa-heart" style="color: indianred"></i
+                ></a>
+                <span class="text-white fs-5">190.5K</span>
+              </div>
             </div>
           </div>
-          <div class="d-inline-flex position-relative movie-container">
-            <img
-              class="image-fluid rounded-1 w-100"
-              src="./images/arcane.webp"
-              alt="arcane"
-            />
-            <div class="text-center position-absolute p-4 movie-stats">
-              <a class="fs-1" href="#"
-                ><i class="fa-solid fa-eye" style="color:cornflowerblue"></i
-              ></a>
-              <span class="text-white fs-5">376.5K</span>
-              <a class="fs-1" href="#"
-                ><i class="fa-solid fa-heart" style="color: indianred"></i
-              ></a>
-              <span class="text-white fs-5">190.5K</span>
+
+          <div class="col">
+            <div class="position-relative movie-container">
+              <img
+                class="img-fluid rounded-1 w-100"
+                src="./images/arcane.webp"
+                alt="arcane"
+              />
+              <div class="text-center position-absolute p-4 movie-stats">
+                <a class="fs-1" href="#"
+                  ><i class="fa-solid fa-eye" style="color: cornflowerblue"></i
+                ></a>
+                <span class="text-white fs-5">376.5K</span>
+                <a class="fs-1" href="#"
+                  ><i class="fa-solid fa-heart" style="color: indianred"></i
+                ></a>
+                <span class="text-white fs-5">190.5K</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       <!-- Popular this week -->
-      <div class="row">
-        <div class="col"></div>
-        <div class="mt-5 ms-4 col-6">
-          <a class="text-decoration-none text-white " href="#"
-            ><h5 class="text-hover">Popular reviews this week</h5></a
-          >
-          <hr />
-          <div class="d-flex flex-column">
-            <div class="row w-75">
-              <div class="col-3">
+      <div class="container mt-5" id="popularThisWeek">
+        <div class="row">
+          <div class="col-8 col-md-12 col-sm-12 col-lg-8">
+            <a class="text-decoration-none text-white" href="#">
+              <h5 class="text-hover">Popular reviews this week</h5>
+            </a>
+            <hr />
+
+            <div class="row g-3 align-items-start">
+              <div class="col-4 col-sm-3">
                 <img
-                  class="img-fluid w-100 mt-3 review-poster"
+                  class="img-fluid review-poster rounded w-75"
                   src="./images/f1-the-movie-review-poster.jpg"
                   alt="f1-poster"
                 />
               </div>
-              <div class="col-9 mt-3">
-                <h5 class="text-hover text-white">F1 <span class="fw-lighter text-hover">2025</span></h5>
-                <i class="fa-solid fa-user"></i>
-                <span>neowrap</span>
-                <i class="fa-solid fa-star" style="color: coral"></i>
-                <i class="fa-solid fa-star" style="color: coral"></i>
-                <i class="fa-solid fa-star" style="color:coral"></i>
-                <i class="fa-solid fa-star" style="color:coral"></i>
-                <i class="fa-solid fa-star" style="color: coral"></i>
-                <p class="text-wrap mt-4">
-                  Radio: “Box, Box, Box!” Brad Pitt: “WHAT’S IN THE BOX”
-                </p>
-              </div>
-            </div>
-            <hr class="mt-3">
-            <div class="row w-75">
-              <div class="col-3">
-                <img
-                  class="img-fluid w-100 mt-3 review-poster"
-                  src="./images/superman-2025.jpg"
-                  alt="superman-poster"
-                />
-              </div>
-              <div class="col-9 mt-3">
-                <a class="text-decoration-none text-white text-hover" href="#"><h5 class="text-white text-hover">Superman <span class="text-hover fw-lighter text-hover">2025</span></h5></a>
-                <i class="fa-solid fa-user text-white-50"></i>
-                <span>neowrap</span>
-                <i class="fa-solid fa-star" style="color: coral"></i>
-                <i class="fa-solid fa-star" style="color: coral"></i>
-                <i class="fa-solid fa-star" style="color: coral"></i>
-                <i class="fa-solid fa-star" style="color: coral"></i>
-                <p class="text-wrap mt-4">
-                  It doesn’t get more Superman than this. Cut from the same
-                  cloth as Sam Raimi’s Spider-Man in the purest, most sincere
-                  and hopeful way. Genuine delight to my eyes I’m smiling ear to
-                  ear typing this. In love with the lived in superhero world and
-                  with the way Gunn teases the future… I NEED THE WHOLE LOAD
-                  NOW. Corenswet and Brosnahan nailed it — that really is Clark
-                  and Lois. I can’t wait to see this again and again because DC
-                  IS BACK!!!!!!
+              <div class="col-8 col-sm-9">
+                <h5 class="text-hover text-white">
+                  F1 <span class="fw-lighter">2025</span>
+                </h5>
+                <i class="fa-solid fa-user"></i> <span>neowrap</span>
+                <span class="ms-2">
+                  <i class="fa-solid fa-star" style="color: coral"></i>
+                  <i class="fa-solid fa-star" style="color: coral"></i>
+                  <i class="fa-solid fa-star" style="color: coral"></i>
+                  <i class="fa-solid fa-star" style="color: coral"></i>
+                  <i class="fa-solid fa-star" style="color: coral"></i>
+                </span>
+                <p class="text-wrap mt-3">
+                  Radio: “Box, Box, Box!” Brad Pitt: “WHAT’S IN THE BOX” Lorem
+                  ipsum dolor, sit amet consectetur adipisicing elit. Impedit
+                  quasi dicta culpa, sunt aut repudiandae incidunt, alias
+                  consectetur ab consequatur reprehenderit nulla itaque corrupti
+                  quos excepturi, ipsum obcaecati enim? Cumque.
                 </p>
               </div>
             </div>
             <hr class="mt-3" />
-            <div class="row w-75">
-              <div class="col-3">
+
+            <div class="row g-3 align-items-start">
+              <div class="col-4 col-sm-3">
                 <img
-                  class="img-fluid w-100 mt-3 review-poster"
+                  class="img-fluid review-poster rounded w-75"
+                  src="./images/superman-2025.jpg"
+                  alt="superman-poster"
+                />
+              </div>
+              <div class="col-8 col-sm-9">
+                <h5 class="text-hover text-white">
+                  Superman <span class="fw-lighter">2025</span>
+                </h5>
+                <i class="fa-solid fa-user text-white-50"></i>
+                <span>neowrap</span>
+                <span class="ms-2">
+                  <i class="fa-solid fa-star" style="color: coral"></i>
+                  <i class="fa-solid fa-star" style="color: coral"></i>
+                  <i class="fa-solid fa-star" style="color: coral"></i>
+                  <i class="fa-solid fa-star" style="color: coral"></i>
+                </span>
+                <p class="text-wrap mt-3">
+                  It doesn’t get more Superman than this... DC IS BACK!!!!!!
+                </p>
+              </div>
+            </div>
+            <hr class="mt-3" />
+
+            <div class="row g-3 align-items-start">
+              <div class="col-4 col-sm-3">
+                <img
+                  class="img-fluid review-poster rounded w-75"
                   src="./images/the-godfather.jpg"
                   alt="godfather-poster"
                 />
               </div>
-              <div class="col-9 mt-3">
-                <h5  class="text-hover text-white">The Godfather <span class="text-hover fw-lighter">1972</span></h5>
-                <i class="fa-solid fa-user"></i>
-                <span>neowrap</span>
-                <i class="fa-solid fa-star" style="color: coral"></i>
-                <i class="fa-solid fa-star" style="color: coral"></i>
-                <i class="fa-solid fa-star" style="color: coral"></i>
-                <i class="fa-solid fa-star" style="color: coral"></i>
-                <p class="text-wrap mt-4">
+              <div class="col-8 col-sm-9">
+                <h5 class="text-hover text-white">
+                  The Godfather <span class="fw-lighter">1972</span>
+                </h5>
+                <i class="fa-solid fa-user"></i> <span>neowrap</span>
+                <span class="ms-2">
+                  <i class="fa-solid fa-star" style="color: coral"></i>
+                  <i class="fa-solid fa-star" style="color: coral"></i>
+                  <i class="fa-solid fa-star" style="color: coral"></i>
+                  <i class="fa-solid fa-star" style="color: coral"></i>
+                </span>
+                <p class="text-wrap mt-3">
                   The baptism scene, what a masterclass.
                 </p>
               </div>
             </div>
             <hr class="mt-3" />
-            
+          </div>
+          <div class="col-4 col-md-12 col-sm-12 col-lg-4">
+            <a class="text-decoration-none text-white" href="#">
+              <h5 class="text-hover">Popular Lists</h5>
+            </a>
+            <hr />
+            <div class="row">
+              <div class="col-4 col-sm-3 d-flex">
+                <img
+                  class="img-fluid"
+                  src="./images/eternal-sunshine-of-the-spotless-mind.jpg"
+                  alt="eternal-sunshine"
+                />
+                <img
+                  class="img-fluid"
+                  src="./images/parasite.jpg"
+                  alt="parasite"
+                />
+                <img
+                  class="img-fluid"
+                  src="./images/there will be blood.jpg"
+                  alt="there-will-be-blood"
+                />
+              </div>
+              <p class="mt-2 text-white fw-semibold">
+                New York Times’ 100 Best Movies of the 21st Century
+              </p>
+            </div>
+            <div class="row mt-3">
+              <div class="col-4 col-sm-3 d-flex">
+                <img
+                  class="img-fluid"
+                  src="./images/schindlers-list.jpg"
+                  alt="shindlers-list"
+                />
+                <img
+                  class="img-fluid"
+                  src="./images/spirited-away.jpg"
+                  alt="spirited-away"
+                />
+                <img
+                  class="img-fluid"
+                  src="./images/goodfellas.jpg"
+                  alt="goodfellas"
+                />
+              </div>
+              <p class="mt-2 text-white fw-semibold text-wrap">
+                Movies everyone should watch at least once during their lifetime
+              </p>
+            </div>
+            <div class="row mt-3">
+              <div class="col-4 col-sm-3 d-flex">
+                <img
+                  class="img-fluid"
+                  src="./images/eternal-sunshine-of-the-spotless-mind.jpg"
+                  alt="eternal-sunshine"
+                />
+                <img
+                  class="img-fluid"
+                  src="./images/parasite.jpg"
+                  alt="parasite"
+                />
+                <img
+                  class="img-fluid"
+                  src="./images/there will be blood.jpg"
+                  alt="there-will-be-blood"
+                />
+              </div>
+              <p class="mt-2 text-white fw-semibold">
+                New York Times’ 100 Best Movies of the 21st Century
+              </p>
+            </div>
           </div>
         </div>
-        <div class="col-2">
-        
-        </div>
-        <div class="col"></div>
       </div>
-      
-      
-      <p class="m-5">
-        \ beatae voluptates animi excepturi consequatur ab. Quo, quaerat.
-        Eveniet officiis qui a minus cumque, quod ea tempora optio harum,
-        voluptatibus repellendus placeat blanditiis! Reprehenderit amet, dolorem
-        nobis omnis delectus saepe odio unde! Tempore eligendi perferendis eaque
-        pariatur minima vel, assumenda totam quam officia necessitatibus quas
-        sapiente impedit ratione harum nulla odio alias sed? Aspernatur
-        cupiditate vel nesciunt illum amet voluptates saepe. Neque sunt
-        architecto, alias possimus facilis fugiat dolorum ipsam dolor autem rem
-        laborum nobis minima velit corporis est illum animi hic nemo! Enim,
-        velit nam culpa laborum, ut animi quia accusamus asperiores modi
-        voluptatem assumenda! Sequi asperiores perferendis ex impedit vel
-        repudiandae quam dolor. Repudiandae quos soluta labore nobis, eaque
-        error repellat? Repellat voluptas nobis minima adipisci perspiciatis
-        velit facere quasi. Commodi veritatis eaque et alias eos. Amet tempore
-        animi voluptates maxime. Nam, aspernatur alias inventore amet tempora
-        consequatur doloribus enim tempore. Facere, repellat. Fugiat, nihil
-        quia! Reiciendis eius sunt, obcaecati, fugit illum laborum sint quae
-        numquam minima vitae optio corporis molestiae, rem atque? Similique,
-        magni nostrum ullam vitae quis modi aliquid! Asperiores obcaecati ad
-        consectetur pariatur excepturi nemo dolorem nam molestiae error
-        expedita, voluptatibus vel perspiciatis consequatur fuga voluptatem
-        facilis sed maxime tenetur similique est dignissimos. Culpa enim
-        possimus delectus ullam? Consectetur odit enim aliquid numquam minus
-        tenetur voluptates similique maiores eius nobis, obcaecati eveniet
-        repellendus officiis earum iusto ex cupiditate! Quibusdam accusamus
-        temporibus delectus dicta repellat molestias quasi laboriosam corrupti?
-        Eaque itaque velit obcaecati sed voluptatibus delectus unde rerum
-        commodi molestiae pariatur, blanditiis ipsa. Velit ipsum saepe odit
-        voluptas minus distinctio nisi dolor facilis reiciendis alias
-        necessitatibus, eius culpa eveniet?
-      </p>
+
+    
       <!-- offcanvas -->
       <button
         class="btn btn-primary position-fixed end-0 top-50 translate-middle-y z-3"
@@ -580,36 +703,64 @@
           <div class="col"></div>
           <ul id="footer-tabs" class="col d-flex justify-content-end mt-4">
             <li class="me-5">
-              <a class="text-decoration-none text-white-50 footerTabs" href="#">ABOUT</a>
+              <a class="text-decoration-none text-white-50 footerTabs" href="#"
+                >ABOUT</a
+              >
             </li>
             <li class="me-5">
-              <a class="text-decoration-none text-white-50 footerTabs" href="#">NEWS</a>
+              <a class="text-decoration-none text-white-50 footerTabs" href="#"
+                >NEWS</a
+              >
             </li>
             <li class="me-5">
-              <a class="text-decoration-none text-white-50 footerTabs" href="#">HELP</a>
+              <a class="text-decoration-none text-white-50 footerTabs" href="#"
+                >HELP</a
+              >
             </li>
             <li class="me-5">
-              <a class="text-decoration-none text-white-50 footerTabs" href="#">TERMS</a>
+              <a class="text-decoration-none text-white-50 footerTabs" href="#"
+                >TERMS</a
+              >
             </li>
             <li class="me-5">
-              <a class="text-decoration-none text-white-50 footerTabs" href="#">PRIVACY</a>
+              <a class="text-decoration-none text-white-50 footerTabs" href="#"
+                >PRIVACY</a
+              >
             </li>
             <li class="me-5">
-              <a class="text-decoration-none text-white-50 footerTabs" href="#">CONTACT</a>
+              <a class="text-decoration-none text-white-50 footerTabs" href="#"
+                >CONTACT</a
+              >
             </li>
           </ul>
           <div class="col mt-3 d-flex justify-content-end">
-            <a class="text-white-50 fs-4 me-3 footerTabs" href="#"
-              ><i class="fa-brands fa-facebook"></i
+            <a
+              data-bs-toggle="tooltip"
+              data-bs-title="Facebook"
+              class="text-white-50 fs-4 me-3"
+              href="#"
+              ><i class="fa-brands fa-facebook footerTabs"></i
             ></a>
-            <a class="text-white-50 fs-4 me-3 footerTabs" href="#"
-              ><i class="fa-brands fa-instagram"></i
+            <a
+              data-bs-toggle="tooltip"
+              data-bs-title="Instagram"
+              class="text-white-50 fs-4 me-3"
+              href="#"
+              ><i class="fa-brands fa-instagram footerTabs"></i
             ></a>
-            <a class="text-white-50 fs-4 me-3 footerTabs" href="#"
-              ><i class="fa-brands fa-reddit-alien"></i
+            <a
+              data-bs-toggle="tooltip"
+              data-bs-title="Reddit"
+              class="text-white-50 fs-4 me-3"
+              href="#"
+              ><i class="fa-brands fa-reddit-alien footerTabs"></i
             ></a>
-            <a class="text-white-50 fs-4 footerTabs" href="#"
-              ><i class="fa-brands fa-x-twitter"></i
+            <a
+              data-bs-toggle="tooltip"
+              data-bs-title="Twitter"
+              class="text-white-50 fs-4"
+              href="#"
+              ><i class="fa-brands fa-x-twitter footerTabs"></i
             ></a>
           </div>
           <div class="col-3"></div>
@@ -618,8 +769,8 @@
           <div class="col"></div>
           <div class="col-6">
             <span class="fs-6 text-white-50">
-            &copy; Cinescope Limited 2025. All Rights Reserved &reg;
-          </span>
+              &copy; Cinescope Limited 2025. All Rights Reserved &reg;
+            </span>
           </div>
           <div class="col-2"></div>
           <div class="col"></div>
@@ -632,4 +783,13 @@
     integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
     crossorigin="anonymous"
   ></script>
+  <script>
+    //  Tooltip
+    const tooltipTriggerList = document.querySelectorAll(
+      '[data-bs-toggle="tooltip"]'
+    );
+    const tooltipList = [...tooltipTriggerList].map(
+      (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+    );
+  </script>
 </html>
