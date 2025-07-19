@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cinescope</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- GoogleFonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Alfa+Slab+One&family=Cookie&family=Monoton&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <!-- carousel -->
+
+    <div id="main-container" class="text-white">
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <nav
+          id="navBar"
+          class="navbar navbar-expand-lg position-absolute top-0 start-0 w-100 z-3"
+          data-bs-theme="light"
+        >
+          <div class="container-fluid">
+            <a class="logo fs-3" href="#"><i class="fa-solid fa-film"></i></a>
+            <a class="navbar-brand text-white ms-2" href="#">Cinescope</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarScroll"
+              aria-controls="navbarScroll"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+              <ul
+                class="navbar-nav ms-5 me-auto my-2 my-lg-0 navbar-nav-scroll"
+                style="--bs-scroll-height: 100px"
+              >
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown text-white tabs fs-5 me-4"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Lists
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li class="dropend">
+                      <a
+                        class="dropdown-item dropdown"
+                        href="#"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Featured List
+                      </a>
+                      <ul class="dropdown-menu ps-50">
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Top 250 Narrative Feature Films</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >One Million Watched Club</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Top 100 Animated Feature Films</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li>
+                      <a class="dropdown-item tabs" href="#"
+                        >Popular This Week</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item tabs" href="#">Crew List</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown text-white fs-5 me-4"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Movies
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#">Top 250 Movies</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Popular This Week</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Top Box Office</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown text-white fs-5 me-4"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    TV Shows
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">TV news</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Browse TV shows by genre</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Most Popular TV</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form>
+            </div>
+          </div>
+        </nav>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2000">
+            <img src="./images/f1-movie.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>
+                Some representative placeholder content for the first slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="./images/superman.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>
+                Some representative placeholder content for the second slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="./images/f1-movie.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- images -->
+      <div class="container d-flex justify-content-center">
+        <img
+          class="img-fluid tabimages"
+          src="./images/movie.png"
+          alt="movies"
+        />
+        <img
+          class="img-fluid tabimages"
+          src="./images/awards.png"
+          alt="awards"
+        />
+        <img
+          class="img-fluid tabimages"
+          src="./images/community.png"
+          alt="community"
+        />
+        <img class="img-fluid tabimages" src="./images/tv.png" alt="tv" />
+      </div>
+      <!-- main content -->
+      <!-- movie images -->
+
+      <div class="col-12 d-flex justify-content-center align-items-center">
+        <div id="movie-container" class="d-inline-flex position-relative me-3">
+          <img
+            class="image-fluid rounded-1 w-100"
+            src="./images/Argo .jfif"
+            alt="argo"
+          />
+          <div id="movie-stats" class="text-center position-absolute p-4">
+            <a class="fs-1" href="#"
+              ><i class="fa-solid fa-eye" style="color: #9eeb47"></i
+            ></a>
+            <span class="text-white fs-5">376.5K</span>
+            <a class="fs-1" href="#"
+              ><i class="fa-solid fa-heart" style="color: #f0bf4c"></i
+            ></a>
+            <span class="text-white fs-5">190.5K</span>
+          </div>
+        </div>
+        <div id="movie-container" class="d-inline-flex position-relative me-3">
+          <img
+            class="image-fluid rounded-1 w-100"
+            src="./images/Her.jfif"
+            alt="her"
+          />
+          <div id="movie-stats" class="text-center position-absolute p-4">
+            <a class="fs-1" href="#"
+              ><i class="fa-solid fa-eye" style="color: #9eeb47"></i
+            ></a>
+            <span class="text-white fs-5">376.5K</span>
+            <a class="fs-1" href="#"
+              ><i class="fa-solid fa-heart" style="color: #f0bf4c"></i
+            ></a>
+            <span class="text-white fs-5">190.5K</span>
+          </div>
+        </div>
+        <div id="movie-container" class="d-inline-flex position-relative me-3">
+          <img
+            class="image-fluid rounded-1 w-100"
+            src="./images/Fight Club Poster.jfif"
+            alt="fclub"
+          />
+          <div id="movie-stats" class="text-center position-absolute p-4">
+            <a class="fs-1" href="#"
+              ><i class="fa-solid fa-eye" style="color: #9eeb47"></i
+            ></a>
+            <span class="text-white fs-5">376.5K</span>
+            <a class="fs-1" href="#"
+              ><i class="fa-solid fa-heart" style="color: #f0bf4c"></i
+            ></a>
+            <span class="text-white fs-5">190.5K</span>
+          </div>
+        </div>
+        <div id="movie-container" class="d-inline-flex position-relative me-3">
+          <img
+            class="image-fluid rounded-1 w-100"
+            src="./images/The Brutalist .jfif"
+            alt="brutalist"
+          />
+          <div id="movie-stats" class="text-center position-absolute p-4">
+            <a class="fs-1" href="#"
+              ><i class="fa-solid fa-eye" style="color: #9eeb47"></i
+            ></a>
+            <span class="text-white fs-5">376.5K</span>
+            <a class="fs-1" href="#"
+              ><i class="fa-solid fa-heart" style="color: #f0bf4c"></i
+            ></a>
+            <span class="text-white fs-5">190.5K</span>
+          </div>
+        </div>
+        <div id="movie-container" class="d-inline-flex position-relative">
+          <img
+            class="image-fluid rounded-1 w-100"
+            src="./images/The Terminal.jfif"
+            alt="terminal"
+          />
+          <div id="movie-stats" class="text-center position-absolute p-4">
+            <a class="fs-1" href="#"
+              ><i class="fa-solid fa-eye" style="color: #9eeb47"></i
+            ></a>
+            <span class="text-white fs-5">376.5K</span>
+            <a class="fs-1" href="#"
+              ><i class="fa-solid fa-heart" style="color: #f0bf4c"></i
+            ></a>
+            <span class="text-white fs-5">190.5K</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Popular this week -->
+      <div class="row">
+        <div class="col"></div>
+        <div class="mt-5 ms-4 col-6">
+          <a class="text-decoration-none text-white" href="#"
+            ><h5>Popular reviews this week</h5></a
+          >
+          <hr />
+          <div class="d-flex flex-column">
+            <div class="w-25">
+              <img
+                class="img-fluid w-50 mt-3"
+                src="./images/superman-2025.jpg"
+                alt="superman-poster"
+              />
+              <h6>Superman <span class="fw-lighter">2025</span></h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-2"></div>
+        <div class="col"></div>
+      </div>
+
+      <p class="mt-5">
+        \ beatae voluptates animi excepturi consequatur ab. Quo, quaerat.
+        Eveniet officiis qui a minus cumque, quod ea tempora optio harum,
+        voluptatibus repellendus placeat blanditiis! Reprehenderit amet, dolorem
+        nobis omnis delectus saepe odio unde! Tempore eligendi perferendis eaque
+        pariatur minima vel, assumenda totam quam officia necessitatibus quas
+        sapiente impedit ratione harum nulla odio alias sed? Aspernatur
+        cupiditate vel nesciunt illum amet voluptates saepe. Neque sunt
+        architecto, alias possimus facilis fugiat dolorum ipsam dolor autem rem
+        laborum nobis minima velit corporis est illum animi hic nemo! Enim,
+        velit nam culpa laborum, ut animi quia accusamus asperiores modi
+        voluptatem assumenda! Sequi asperiores perferendis ex impedit vel
+        repudiandae quam dolor. Repudiandae quos soluta labore nobis, eaque
+        error repellat? Repellat voluptas nobis minima adipisci perspiciatis
+        velit facere quasi. Commodi veritatis eaque et alias eos. Amet tempore
+        animi voluptates maxime. Nam, aspernatur alias inventore amet tempora
+        consequatur doloribus enim tempore. Facere, repellat. Fugiat, nihil
+        quia! Reiciendis eius sunt, obcaecati, fugit illum laborum sint quae
+        numquam minima vitae optio corporis molestiae, rem atque? Similique,
+        magni nostrum ullam vitae quis modi aliquid! Asperiores obcaecati ad
+        consectetur pariatur excepturi nemo dolorem nam molestiae error
+        expedita, voluptatibus vel perspiciatis consequatur fuga voluptatem
+        facilis sed maxime tenetur similique est dignissimos. Culpa enim
+        possimus delectus ullam? Consectetur odit enim aliquid numquam minus
+        tenetur voluptates similique maiores eius nobis, obcaecati eveniet
+        repellendus officiis earum iusto ex cupiditate! Quibusdam accusamus
+        temporibus delectus dicta repellat molestias quasi laboriosam corrupti?
+        Eaque itaque velit obcaecati sed voluptatibus delectus unde rerum
+        commodi molestiae pariatur, blanditiis ipsa. Velit ipsum saepe odit
+        voluptas minus distinctio nisi dolor facilis reiciendis alias
+        necessitatibus, eius culpa eveniet?
+      </p>
+      <!-- offcanvas -->
+      <button
+        class="btn btn-primary position-fixed end-0 top-50 translate-middle-y z-3"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight"
+      >
+        offcanvas
+      </button>
+
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasRightLabel">
+            Offcanvas right
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">...</div>
+      </div>
+      <!-- fooer -->
+      <footer class="col-12 bg-dark">
+        <div class="row">
+          <div class="col-4"></div>
+          <ul id="footer-tabs" class="col-3 d-flex justify-content-end mt-4">
+            <li class="me-5">
+              <a class="text-decoration-none text-white-50" href="#">ABOUT</a>
+            </li>
+            <li class="me-5">
+              <a class="text-decoration-none text-white-50" href="#">NEWS</a>
+            </li>
+            <li class="me-5">
+              <a class="text-decoration-none text-white-50" href="#">HELP</a>
+            </li>
+            <li class="me-5">
+              <a class="text-decoration-none text-white-50" href="#">TERMS</a>
+            </li>
+            <li class="me-5">
+              <a class="text-decoration-none text-white-50" href="#">PRIVACY</a>
+            </li>
+            <li>
+              <a class="text-decoration-none text-white-50" href="#">CONTACT</a>
+            </li>
+          </ul>
+          <div class="col-3 mt-3 d-flex justify-content-end">
+            <a class="text-white-50 fs-4 me-3" href="#"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a class="text-white-50 fs-4 me-3" href="#"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a class="text-white-50 fs-4 me-3" href="#"
+              ><i class="fa-brands fa-reddit-alien"></i
+            ></a>
+            <a class="text-white-50 fs-4" href="#"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+          </div>
+          <div class="col-1"></div>
+        </div>
+        <p class="text-center">
+          &copy; Cinescope Limited 2025. All Rights Reserved &reg;
+        </p>
+      </footer>
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"
+  ></script>
+</html>
