@@ -19,6 +19,9 @@ body{
 #navBar:hover .searchBox{
     background-color: white!important;
 }
+.searchBox:hover .searchButton {
+    display: none;
+}
 .logo{
     color: cornflowerblue;
     margin-left: 18%;
@@ -52,6 +55,9 @@ body{
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   
+}
+#join{
+    margin: 10%;
 }
 
 .joinButton:hover{
@@ -114,9 +120,13 @@ body{
     padding:0% 10%;
     margin-bottom: 5%;
 }
+.popularListCard{
+    cursor: pointer;
+}
 footer{
     height: 30vh;
 }
 .footerTabs:hover{
     color: white!important;
 }
+
